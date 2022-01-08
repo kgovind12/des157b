@@ -4,7 +4,10 @@
     const button = document.querySelector('button');
     const body = document.querySelector('body');
     const banner = document.querySelector('#banner');
-    const sections = document.querySelectorAll('section')
+    const sections = document.querySelectorAll('section');
+    const sun = document.querySelector('#sun');
+    const moon = document.querySelector('#moon');
+
     let mode = 'dark';
 
     button.addEventListener('click', function() {
@@ -16,6 +19,8 @@
                 section.className = 'switch';
             }
             mode = 'light';
+            sun.className = 'set';
+            moon.className = 'rise';
         } else {
             body.removeAttribute('class');
             banner.removeAttribute('class');
@@ -24,6 +29,8 @@
                 section.removeAttribute('class');
             }
             mode = 'dark'
+            sun.className = 'rise';
+            moon.className = 'set';
         }
     })
 })()

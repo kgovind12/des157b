@@ -2,16 +2,28 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-green: #43a043;
+    --light-body-bg: #b4e5f9;
+    --light-banner-bg: skyblue;
+    --dark-body-bg: #0f1226;
+    --dark-banner-bg: black;
+    --main-white: rgb(235, 235, 235);
+    --main-black: #333;
+    --sun: #f0c828;
+}
+
 body {
-    background-color: #333;
-    color: rgb(235, 235, 235);
     transition: all 2s;
     font-family: 'Work Sans', sans-serif;
+    background-color: var(--light-body-bg);
+    color: var(--main-black);
+    margin: 0 4rem;
 }
 
 body.switch {
-    background-color: rgb(235, 235, 235);
-    color: #333;
+    background-color: var(--dark-body-bg);
+    color: rgb(235, 235, 235);
 }
 
 #container {
@@ -34,14 +46,15 @@ header {
     width: 1100px;
     height: 250px;
     margin: auto;
-    background-color: rgb(235, 235, 235);
+    background-color: var(--light-banner-bg);
+    border: 2px solid var(--main-green);
+    transition: all 2s;
     overflow: hidden;
 }
 
 #banner.switch {
-    background-color: #333;
-    color: rgb(235, 235, 235);
-    transition: all 2s;
+    background-color: var(--dark-banner-bg);
+    border: 2px solid var(--main-white);
 }
 
 main {
@@ -52,9 +65,13 @@ main {
 
 main section {
     width: 25%;
-    border: 1px rgb(235, 235, 235) dashed;
+    border: 1px dashed var(--main-green);
     margin: 0 .25em;
     padding: 1em;
+}
+
+main section.switch {
+    border: 1px dashed var(--main-white);
 }
 
 a {
@@ -76,21 +93,21 @@ section a {
     line-height: 1.1em;
     display: inline-block;
     padding: .5em;
-    color: orange;
+    color: black;
 }
 
 section a:hover {
-    background-color: orange;
-    color: #333;
+    background-color: var(--main-green);
+    color: var(--main-black);
 }
 
 section.switch a {
-    color: #333;
+    color: white;
 }
 
 section.switch a:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+    background-color: var(--main-white);
+    color: var(--main-black);
 }
 
 button {
@@ -104,8 +121,8 @@ button {
 }
 
 button:hover {
-    background-color: coral;
-    cursor: pointer;
+    background-color: #333;
+    color: rgb(235, 235, 235);
 }
 
 button.switch {
@@ -114,6 +131,51 @@ button.switch {
 }
 
 button.switch:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235)
+    background-color: coral;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Animations */
+#sun, #moon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+}
+
+#sun { background: var(--sun); }
+#moon { background: var(--main-white); }
+
+.rise {
+    offset-path: path('M 50 350 A 100 60 0 1 1 1050 350');
+    animation: rise 2000ms 1000ms 1 normal ease-in forwards;
+}
+
+.set {
+    offset-path: path('M 50 350 A 100 60 0 1 1 1050 350');
+    animation: set 2000ms 1 normal ease-in forwards;
+}
+
+@keyframes rise {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 50%;
+    }
+}
+
+@keyframes set {
+    0% {
+        offset-distance: 50%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
 }
