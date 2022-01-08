@@ -151,6 +151,9 @@ button.switch .circle {
     opacity: 0;
 }
 
+
+/********************** Animations ***********************/
+
 #stars {
     width: 100%;
     position: relative;
@@ -166,6 +169,7 @@ button.switch .circle {
     animation-timing-function: ease-in-out;
 }
 
+/* Fade in/out the hills */
 img { 
     position: absolute; 
     bottom: 0;
@@ -185,7 +189,7 @@ img.fadeout {
     animation: fadeout 3000ms 1500ms 1 normal ease-out forwards;
 }
 
-/* Animations */
+/* Sun and moon rise/set */
 #sun, #moon {
     width: 60px;
     height: 60px;
@@ -240,6 +244,7 @@ img.fadeout {
     animation: set 1800ms 1 normal ease-in-out forwards;
 }
 
+/* Keyframes */
 @keyframes rise {
     0% {
       offset-distance: 0%;

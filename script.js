@@ -29,6 +29,7 @@
             nighthills.className = 'fadein';
             stars.classList.remove('hide');
 
+            // Remove all the stars and add new stars
             while (stars.children.length > 0) {
                 stars.removeChild(stars.lastChild);
             }
@@ -52,6 +53,7 @@
         }
     });
 
+    // Function to add stars in random positions along the top of the banner
     function generateStars() {
         let xPos = Math.floor(Math.random() * 100 + 1);
         let yPos = Math.floor(Math.random() * 60 + 1);
