@@ -8,9 +8,11 @@
     const sun = document.querySelector('#sun');
     const moon = document.querySelector('#moon');
     const stars = document.querySelector('#stars');
-    const hillsImg = document.querySelector('img');
+    const dayhills = document.querySelector('#dayhills');
+    const nighthills = document.querySelector('#nighthills');
 
     let mode = 'dark';
+    dayhills.className = 'slidein';
 
     button.addEventListener('click', function() {
         if (mode === 'dark') {
@@ -23,7 +25,8 @@
             mode = 'light';
             sun.className = 'set';
             moon.className = 'rise';
-            hillsImg.src = 'images/nighthills.png';
+            dayhills.className = 'fadeout';
+            nighthills.className = 'fadein';
             stars.classList.remove('hide');
 
             while (stars.children.length > 0) {
@@ -43,7 +46,8 @@
             mode = 'dark'
             sun.className = 'rise';
             moon.className = 'set';
-            hillsImg.src = 'images/dayhills.png';
+            dayhills.className = 'fadein';
+            nighthills.className = 'fadeout';
             stars.classList.add('hide');
         }
     });
