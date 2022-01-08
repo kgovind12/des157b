@@ -4,13 +4,13 @@
 
 :root {
     --main-green: #43a043;
-    --light-body-bg: #b4e5f9;
-    --light-banner-bg: skyblue;
+    --light-body-bg: #d4f3ff;
+    --light-banner-bg: #afe8ff;
     --dark-body-bg: #0f1226;
     --dark-banner-bg: black;
     --main-white: rgb(235, 235, 235);
     --main-black: #333;
-    --sun: #f0c828;
+    --sun: #ecc219;
 }
 
 body {
@@ -114,24 +114,34 @@ button {
     position: absolute;
     top: 20px;
     right: 20px;
-    padding: 12px;
-    background-color: orange;
-    color: #333;
+    padding: 15px;
+    border-radius: 30px;
+    width: 60px;
+    background-color: var(--main-black);
+    color: var(--main-white);
     border: 1px solid transparent;
 }
 
-button:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+button .circle {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--main-white);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    transition: all 0.5s;
 }
 
-button.switch {
-    background-color: rgb(235, 235, 235);
-    border-color: #333;
+button:hover {
+    cursor: pointer;
+}
+
+button.switch .circle {
+    transform: translateX(28px);
 }
 
 button.switch:hover {
-    background-color: coral;
     cursor: pointer;
 }
 
@@ -148,6 +158,15 @@ button.switch:hover {
     position: absolute;
     background-color: var(--main-white);
     border-radius: 50%;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+img {
+    position: absolute;
+    bottom: 0;
 }
 
 /* Animations */
@@ -164,7 +183,7 @@ button.switch:hover {
 
 .rise {
     offset-path: path('M 50 350 A 100 60 0 1 1 1050 350');
-    animation: rise 2000ms 1000ms 1 normal ease-in forwards;
+    animation: rise 2000ms 500ms 1 normal ease-in forwards;
 }
 
 .set {
@@ -187,5 +206,14 @@ button.switch:hover {
     }
     100% {
         offset-distance: 100%;
+    }
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

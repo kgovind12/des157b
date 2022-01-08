@@ -8,6 +8,7 @@
     const sun = document.querySelector('#sun');
     const moon = document.querySelector('#moon');
     const stars = document.querySelector('#stars');
+    const hillsImg = document.querySelector('img');
 
     let mode = 'dark';
 
@@ -22,9 +23,14 @@
             mode = 'light';
             sun.className = 'set';
             moon.className = 'rise';
+            hillsImg.src = 'images/nighthills.png';
             stars.classList.remove('hide');
 
-            for (let i = 0; i < 15; i++) {
+            while (stars.children.length > 0) {
+                stars.removeChild(stars.lastChild);
+            }
+
+            for (let i = 0; i < 25; i++) {
                 generateStars();
             }
         } else {
@@ -37,6 +43,7 @@
             mode = 'dark'
             sun.className = 'rise';
             moon.className = 'set';
+            hillsImg.src = 'images/dayhills.png';
             stars.classList.add('hide');
         }
     });
@@ -47,12 +54,15 @@
 
         let size = Math.floor(Math.random() * 4 + 1);
 
+        let animationDuration = 800 + Math.floor(Math.random() * 1000);
+
         let star = document.createElement('div');
         star.className = 'star';
         star.style.width = `${size}px`;
         star.style.height = `${size}px`;
         star.style.left = `${xPos}%`;
         star.style.top = `${yPos}%`;
+        star.style.animationDuration = `${animationDuration}ms`;
 
         stars.appendChild(star);
     }
