@@ -177,7 +177,7 @@ img.slidein {
 }
 
 img.fadein {
-    animation: fadein 2200ms 1 normal ease-in forwards;
+    animation: fadein 2500ms 1 normal ease-in forwards;
     z-index: 2;
 }
 
