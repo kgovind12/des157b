@@ -139,6 +139,16 @@ button.switch:hover {
     display: none;
 }
 
+#stars {
+    width: 100%;
+    position: relative;
+}
+
+.star {
+    position: absolute;
+    background-color: var(--main-white);
+    border-radius: 50%;
+}
 
 /* Animations */
 #sun, #moon {
