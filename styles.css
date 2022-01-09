@@ -152,6 +152,27 @@ button.switch .circle {
     opacity: 0;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--main-black);
+    padding: 0 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer.switch a {
+    color: var(--main-white);
+}
+
 
 /********************** Animations ***********************/
 

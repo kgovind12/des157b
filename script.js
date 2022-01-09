@@ -5,6 +5,7 @@
     const body = document.querySelector('body');
     const banner = document.querySelector('#banner');
     const sections = document.querySelectorAll('section');
+    const footer = document.querySelector('footer');
     const sun = document.querySelector('#sun');
     const moon = document.querySelector('#moon');
     const stars = document.querySelector('#stars');
@@ -19,6 +20,7 @@
             body.className = 'switch';
             banner.className = 'switch';
             button.className = 'switch';
+            footer.className = 'switch';
             for (const section of sections) {
                 section.className = 'switch';
             }
@@ -41,6 +43,7 @@
             body.removeAttribute('class');
             banner.removeAttribute('class');
             button.removeAttribute('class');
+            footer.removeAttribute('class');
             for (const section of sections) {
                 section.removeAttribute('class');
             }
