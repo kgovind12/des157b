@@ -51,6 +51,7 @@ header {
     border: 2px solid var(--main-green);
     transition: all 2s;
     overflow: hidden;
+    transform: rotate(0deg);
 }
 
 #banner.switch {
@@ -181,12 +182,13 @@ img.slidein {
 }
 
 img.fadein {
-    animation: fadein 2500ms 1 normal ease-in forwards;
+    animation: fadein 2300ms 1 normal ease-in forwards;
     z-index: 2;
 }
 
 img.fadeout {
     animation: fadeout 3000ms 1500ms 1 normal ease-out forwards;
+    z-index: 1;
 }
 
 /* Sun and moon rise/set */
@@ -195,7 +197,9 @@ img.fadeout {
     height: 60px;
     border-radius: 50%;
     position: absolute;
-    left: 0;
+    top: 170%;
+    left: 50%;
+    transform: rotate(0deg);
 }
 
 #sun { 
@@ -235,31 +239,29 @@ img.fadeout {
 }
 
 .rise {
-    offset-path: path('M 50 350 A 100 60 0 1 1 1050 350');
     animation: rise 1800ms 800ms 1 normal ease-in-out forwards;
 }
 
 .set {
-    offset-path: path('M 50 350 A 100 60 0 1 1 1050 350');
     animation: set 1800ms 1 normal ease-in-out forwards;
 }
 
 /* Keyframes */
 @keyframes rise {
     0% {
-      offset-distance: 0%;
+        transform: rotate(0deg) translateX(400px) translateY(0) rotate(0deg);
     }
     100% {
-      offset-distance: 50%;
+        transform: rotate(-90deg) translateX(400px) translateY(0px) rotate(90deg);
     }
 }
 
 @keyframes set {
     0% {
-        offset-distance: 50%;
+        transform: rotate(-90deg) translateX(400px) translateY(0px) rotate(90deg);
     }
     100% {
-        offset-distance: 100%;
+        transform: rotate(-180deg) translateX(400px) translateY(0px) rotate(180deg);
     }
 }
 
