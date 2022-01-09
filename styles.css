@@ -249,19 +249,19 @@ img.fadeout {
 /* Keyframes */
 @keyframes rise {
     0% {
-        transform: rotate(0deg) translateX(400px) translateY(0) rotate(0deg);
+        transform: rotate(0deg) translateX(400px) rotate(0deg);
     }
     100% {
-        transform: rotate(-90deg) translateX(400px) translateY(0px) rotate(90deg);
+        transform: rotate(-90deg) translateX(400px) rotate(90deg);
     }
 }
 
 @keyframes set {
     0% {
-        transform: rotate(-90deg) translateX(400px) translateY(0px) rotate(90deg);
+        transform: rotate(-90deg) translateX(400px) rotate(90deg);
     }
     100% {
-        transform: rotate(-180deg) translateX(400px) translateY(0px) rotate(180deg);
+        transform: rotate(-180deg) translateX(400px) rotate(180deg);
     }
 }
 
