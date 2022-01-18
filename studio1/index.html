@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+
+    <title>Ministudio 1 - Blockbuster Video</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
+
+    <link rel="preload" href="media/foggydavis.mp4" as="video" type="video/mp4">
+    <link rel="preload" href="media/driving.mp4" as="video" type="video/mp4">
+    <link rel="preload" href="media/beach.mp4" as="video" type="video/mp4">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <video id="myVideo" muted autoplay playsinline>
+
+        <source src="media/foggydavis.webm" type="video/webm">
+        <source src="media/foggydavis.mp4" type="video/mp4">
+
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="media/foggydavis.mp4">link to the video</a>
+            instead.</p>
+    </video>
+
+    <img class="loader" src="images/Flower.png" alt="Flower image">
+    <p class="loading-message">Your video experience will be here soon...</p>
+
+    <button id="replay" class="hidden">Replay</button>
+
+    <section id="song">
+        <h1 class="hidden">Lyrics:</h1>
+        <p id="line1" class="hidden">And when the days feel like the same old circle</p>
+        <p id="line2" class="hidden">We'll bend the lines and make a new one</p>
+        <p id="line3" class="hidden">Just to find the place where time is free...</p>
+    </section>
+</body>
+</html>
