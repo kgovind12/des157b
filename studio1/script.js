@@ -26,7 +26,6 @@
     });
 
     replayBtn.addEventListener('click', function() {
-        console.log("hello pause")
         index = 0;
         source.setAttribute('src', 'media/foggydavis.mp4');
         if (!playing) {
