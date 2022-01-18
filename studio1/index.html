@@ -11,9 +11,9 @@
     <title>Ministudio 1 - Blockbuster Video</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
 
-    <link rel="preload" href="media/foggydavis.mp4" as="video" type="video/mp4">
+    <!-- <link rel="preload" href="media/foggydavis.mp4" as="video" type="video/mp4">
     <link rel="preload" href="media/driving.mp4" as="video" type="video/mp4">
-    <link rel="preload" href="media/beach.mp4" as="video" type="video/mp4">
+    <link rel="preload" href="media/beach.mp4" as="video" type="video/mp4"> -->
 
     <link rel="stylesheet" href="styles.css">
 
@@ -30,12 +30,15 @@
     </video>
 
     <img class="loader" src="images/Flower.png" alt="Flower image">
-    <p class="loading-message">Your video experience will be here soon...</p>
+    <div class="loading-message">
+        <h1>Come with me...</h1>
+        <p>By Surfaces, Salem Ilese</p>
+    </div>
 
     <button id="replay" class="hidden">Replay</button>
 
     <section id="song">
-        <h1 class="hidden">Lyrics:</h1>
+        <h2 class="hidden">Lyrics:</h2>
         <p id="line1" class="hidden">And when the days feel like the same old circle</p>
         <p id="line2" class="hidden">We'll bend the lines and make a new one</p>
         <p id="line3" class="hidden">Just to find the place where time is free...</p>
