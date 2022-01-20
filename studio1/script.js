@@ -54,7 +54,6 @@
                 replayBtn.style.opacity = 1;
                 hideLines();
                 playing = false;
-                return;
             }
         } else {
             index++;

@@ -1,0 +1,62 @@
+{
+    "point1": {
+        "month": "January",
+        "feeling": "Bittersweet",
+        "reason": "We just got through a year of COVID. I am excited to start DES 157, but wish it was in person. :/"
+    },
+    "point2": {
+        "month": "February",
+        "feeling": "Peaceful",
+        "reason": "I went hiking in Auburn. It feels good to lose myself in the silence and the trees."
+    },
+    "point3": {
+        "month": "March",
+        "feeling": "Worried",
+        "reason": "The second wave of COVID has just started in my home country, India. Cases are rising rapidly."
+    },
+    "point4": {
+        "month": "April",
+        "feeling": "Sad",
+        "reason": "I just lost a close family member. Rest in peace... :("
+    },
+    "point5": {
+        "month": "May",
+        "feeling": "Alright",
+        "reason": "I'm healing. I occupy myself with work every day to stay sane. I am grateful for the opportunities I have to get better."
+    },
+    "point6": {
+        "month": "June",
+        "feeling": "Hopeful",
+        "reason": "I just got vaccinated. We'll all be out of quarantine and back to our lives soon."
+    },
+    "point7": {
+        "month": "July",
+        "feeling": "Stressed",
+        "reason": "Summer session finals are near."
+    },
+    "point8": {
+        "month": "August",
+        "feeling": "Exhilerated",
+        "reason": "I took a trip to Yosemite. With no phone service, I was able to connect with nature. I even fell into a waterfall, and this was one of the best experiences of my life! :P"
+    },
+    "point9": {
+        "month": "September",
+        "feeling": "Excited",
+        "reason": "We're going back to in-person classes! And I will be tutoring DES 157A. :)"
+    },
+    "point10": {
+        "month": "October",
+        "feeling": "Happy",
+        "reason": "I'm super busy with classes, and that's just the way I like it! I'm really enjoying this quarter back on campus. :D"
+    },
+    "point11": {
+        "month": "November",
+        "feeling": "Thankful",
+        "reason": "Thanksgiving is here! I am thankful for friends, family, and my wonderful college education."
+    },
+    "point12": {
+        "month": "December",
+        "feeling": "Optimistic",
+        "reason": "We are on the road to recovery. I am celebrating Christmas and New Year with my family. Also...I got my first job offer!"
+    }
+}
