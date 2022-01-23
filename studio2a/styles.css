@@ -3,13 +3,17 @@
 font-family: 'Crimson Pro', serif;
 font-family: 'Staatliches', cursive; */
 
+/*************** Image credit goes to Bitmoji.com ***************/
+
 :root {
-    --main-red: #c72c2c;
+    --main-red: #c62828;
+    --brick-red: #a72222;
     --main-gray: rgb(52, 52, 52);
 }
 
 body {
     text-align: center;
+    overflow: hidden;
 }
 
 h1 {
@@ -89,7 +93,7 @@ hr {
 }
 
 .circle:hover {
-    background-color: blue;
+    background-color: black;
     cursor: pointer;
 }
 
@@ -99,7 +103,6 @@ hr {
 
 .bubble {
     min-width: 320px;
-    background-color: beige;
     border-radius: 10px;
     padding: 1rem;
     text-align: left;
@@ -121,6 +124,21 @@ hr {
     border-style: solid;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 1rem;
+    width: 100vw;
+    background-color: var(--brick-red);
+}
+
+footer p, footer a {
+    margin: 0;
+    color: white;
+}
+
+/* Circles */
 #point1 { left: 0; }
 #point2 { left: calc(100% / 11); }
 #point3 { left: calc(100% / 11 * 2); }
@@ -134,6 +152,7 @@ hr {
 #point11 { left: calc(100% / 11 * 10); }
 #point12 { left: 100%; }
 
+/* Bubble colors */
 #point1 .bubble { background-color: #f1d5f1; }
 #point2 .bubble { background-color: #c7e9f9; }
 #point3 .bubble { background-color: #fdc4c4; }
