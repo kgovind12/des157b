@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    const circles = document.querySelectorAll('.circle');
+    const circles = document.querySelectorAll('.circlecontainer');
 
     async function getData() {
         const data = await fetch('data/recap.json');

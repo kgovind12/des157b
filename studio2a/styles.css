@@ -76,29 +76,37 @@ hr {
     border: 2px solid var(--main-red);
 }
 
+.circlecontainer {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
 .circle {
     background-color: var(--main-red);
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transition: all 0.4s;
+}
+
+.circlecontainer:hover .circle {
+    background-color: black;
+    transform: scale(1.5);
+}
+
+.circlecontainer:hover .bubble {
+    opacity: 1;
 }
 
 .month {
-    margin-top: 30px;
     font-size: 2em;
     font-family: 'Alumni Sans', sans-serif;
-}
-
-.circle:hover {
-    background-color: black;
-    cursor: pointer;
-}
-
-.circle:hover .bubble {
-    opacity: 1;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
 }
 
 .bubble {
@@ -107,7 +115,7 @@ hr {
     padding: 1rem;
     text-align: left;
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
     left: 50%;
     transform: translate(-50%);
     transition: all 1s ease;
