@@ -2,7 +2,7 @@
     "point1": {
         "month": "January",
         "feeling": "Bittersweet",
-        "reason": "We just got through a year of COVID. I am excited to start DES 157, but wish it was in person. :/"
+        "reason": "We just got through a year of COVID. I am excited to start DES 157, but wish it was in person."
     },
     "point2": {
         "month": "February",
@@ -12,7 +12,7 @@
     "point3": {
         "month": "March",
         "feeling": "Worried",
-        "reason": "The second wave of COVID has just started in my home country, India. Cases are rising rapidly."
+        "reason": "The second wave of COVID has just started, and many new variants have emerged. Cases are rising rapidly."
     },
     "point4": {
         "month": "April",
@@ -27,16 +27,16 @@
     "point6": {
         "month": "June",
         "feeling": "Hopeful",
-        "reason": "I just got vaccinated. We'll all be out of quarantine and back to our lives soon."
+        "reason": "I just got vaccinated. I know we'll all be out of this pandemic and back to our lives soon."
     },
     "point7": {
         "month": "July",
         "feeling": "Stressed",
-        "reason": "Summer session finals are near."
+        "reason": "I'm taking a summer session class and finals are near. One more all-nighter to go..."
     },
     "point8": {
         "month": "August",
-        "feeling": "Exhilerated",
+        "feeling": "Exhilarated",
         "reason": "I took a trip to Yosemite. With no phone service, I was able to connect with nature. I even fell into a waterfall, and this was one of the best experiences of my life! :P"
     },
     "point9": {
@@ -52,7 +52,7 @@
     "point11": {
         "month": "November",
         "feeling": "Thankful",
-        "reason": "Thanksgiving is here! I am thankful for friends, family, and my wonderful college education."
+        "reason": "Thanksgiving is here! I am thankful for friends, family, and this wonderful college experience. I had the chance to experience my first ever Thanksgiving dinner!"
     },
     "point12": {
         "month": "December",

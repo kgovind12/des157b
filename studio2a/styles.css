@@ -1,0 +1,166 @@
+/* Fonts */
+/* font-family: 'Alumni Sans', sans-serif;
+font-family: 'Crimson Pro', serif;
+font-family: 'Staatliches', cursive; */
+
+:root {
+    --main-red: #c72c2c;
+    --main-gray: rgb(52, 52, 52);
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {   
+    font-size: 1.6em; 
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+
+h1, h2 {
+    font-family: 'Staatliches', cursive;
+    color: var(--main-gray);
+}
+
+h3 {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 1.7em;
+    margin-top: 0;
+    white-space: nowrap;
+    color: var(--main-gray);
+}
+
+p {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+img {
+    width: 120px;
+    float: right;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.description {
+    max-width: 60%;
+    margin: auto;
+    text-align: left;
+}
+
+.red {
+    color: var(--main-red);
+}
+
+.timeline {
+    position: relative;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+    margin: auto;
+}
+
+hr {
+    border: 2px solid var(--main-red);
+}
+
+.circle {
+    background-color: var(--main-red);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.month {
+    margin-top: 30px;
+    font-size: 2em;
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+.circle:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.circle:hover .bubble {
+    opacity: 1;
+}
+
+.bubble {
+    min-width: 320px;
+    background-color: beige;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: left;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 1s ease;
+    pointer-events: none;
+}
+
+.bubble::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -15px;
+    border-width: 15px;
+    border-style: solid;
+}
+
+#point1 { left: 0; }
+#point2 { left: calc(100% / 11); }
+#point3 { left: calc(100% / 11 * 2); }
+#point4 { left: calc(100% / 11 * 3); }
+#point5 { left: calc(100% / 11 * 4); }
+#point6 { left: calc(100% / 11 * 5); }
+#point7 { left: calc(100% / 11 * 6); }
+#point8 { left: calc(100% / 11 * 7); }
+#point9 { left: calc(100% / 11 * 8); }
+#point10 { left: calc(100% / 11 * 9); }
+#point11 { left: calc(100% / 11 * 10); }
+#point12 { left: 100%; }
+
+#point1 .bubble { background-color: #f1d5f1; }
+#point2 .bubble { background-color: #c7e9f9; }
+#point3 .bubble { background-color: #fdc4c4; }
+#point4 .bubble { background-color: #c2d4df; }
+#point5 .bubble { background-color: #c5e9da; }
+#point6 .bubble { background-color: #ecf1c3; }
+#point7 .bubble { background-color: #ced1ef; }
+#point8 .bubble { background-color: #bfebcd; }
+#point9 .bubble { background-color: #f9dac0; }
+#point10 .bubble { background-color: #f9e8ab; }
+#point11 .bubble { background-color: #ffd1aa; }
+#point12 .bubble { background-color: #d3f9d3; }
+
+#point1 .bubble::after { border-color: #f1d5f1 transparent transparent transparent; }
+#point2 .bubble::after { border-color: #c7e9f9 transparent transparent transparent; }
+#point3 .bubble::after { border-color: #fdc4c4 transparent transparent transparent; }
+#point4 .bubble::after { border-color: #c2d4df transparent transparent transparent; }
+#point5 .bubble::after { border-color: #c5e9da transparent transparent transparent; }
+#point6 .bubble::after { border-color: #ecf1c3 transparent transparent transparent; }
+#point7 .bubble::after { border-color: #ced1ef transparent transparent transparent; }
+#point8 .bubble::after { border-color: #bfebcd transparent transparent transparent; }
+#point9 .bubble::after { border-color: #f9dac0 transparent transparent transparent; }
+#point10 .bubble::after { border-color: #f9e8ab transparent transparent transparent; }
+#point11 .bubble::after { border-color: #ffd1aa transparent transparent transparent; }
+#point12 .bubble::after { border-color: #d3f9d3 transparent transparent transparent; }
+
+/* Show/hide elements */
+.hidden {
+    opacity: 0;
+}
