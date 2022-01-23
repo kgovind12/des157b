@@ -12,7 +12,7 @@
 
             // Add all the bubbles as html to the circle
             circle.innerHTML += `<div class="bubble hidden" id="bubble-${point}">
-                <img src="images/${jsonData[point].feeling}.png" alt="${jsonData[point].feeling} bitmoji">
+                <img src="images/${jsonData[point].feeling.toLowerCase()}.png" alt="${jsonData[point].feeling} bitmoji">
                 <h2>${jsonData[point].month}</h2>
                 <p>Feeling</p>
                 <h3> ${jsonData[point].feeling}</h3>
