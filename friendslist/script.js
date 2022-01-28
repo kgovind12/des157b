@@ -5,7 +5,6 @@
     Parse.serverURL = 'https://parseapi.back4app.com/'
 
     const newBtn = document.getElementById('newbtn');
-    const editBtns = document.querySelectorAll('.fa-edit');
     const addFriendForm = document.getElementById('add-friend');
     const editFriendForm = document.getElementById('edit-friend');
     const friendList = document.querySelector('main ol');
@@ -47,6 +46,15 @@
                 <i class="fas fa-times-circle" id="d-${id}"></i>`;
 
                 friendList.append(listItem);
+
+                const editBtns = document.querySelectorAll('.fa-edit');
+
+                for (let editBtn of editBtns) {
+                    editBtn.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        editFriendForm.className = 'edit-friend-onscreen';
+                    });
+                }
             });
         } catch(error) {
             console.log('Error getting friends: ', error);
@@ -64,13 +72,6 @@
         event.preventDefault();
         addFriendForm.className = 'add-friend-offscreen';
     });
-
-    for (let editBtn of editBtns) {
-        editBtn.addEventListener('click', function(event) {
-            event.preventDefault();
-            editFriendForm.className = 'edit-friend-onscreen';
-        });
-    }
 
     editFriendForm.addEventListener('submit', function(event) {
         event.preventDefault();
