@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Spots at UC Davis</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    
+    <!-- Checkbox library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="side">
+        <!-- Side content is used for padding -->
+        <div class="side-content">
+            <h1>Favorite Spots at UC Davis</h1>
+            <div class="checkboxes">
+                <div class="pretty p-icon p-curve p-smooth">
+                    <input type="checkbox" id="best-food"/>
+                    <div class="state p-danger">
+                        <i class="icon mdi mdi-check"></i>
+                        <label>Food</label>
+                    </div>
+                </div>
+                <div class="pretty p-icon p-curve p-smooth">
+                    <input type="checkbox" id="nap-spots" />
+                    <div class="state p-primary">
+                        <i class="icon mdi mdi-check"></i>
+                        <label>Nap spots</label>
+                    </div>
+                </div>
+                <div class="pretty p-icon p-curve p-smooth">
+                    <input type="checkbox" id="study-spaces"/>
+                    <div class="state p-success">
+                        <i class="icon mdi mdi-check"></i>
+                        <label>Study spaces</label>
+                    </div>
+                </div>
+                <div class="pretty p-icon p-curve p-smooth p-pulse">
+                    <input type="checkbox" id="dorms"/>
+                    <div class="state p-info">
+                        <i class="icon mdi mdi-check"></i>
+                        <label>Dorms</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div id="map"></div>
+    </main>
+</body>
+</html>
