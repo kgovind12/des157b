@@ -1,4 +1,4 @@
-var map = L.map('map').setView([38.53963210795564, -121.75372460683272], 15.5);
+var map = L.map('map').setView([38.54173971971019, -121.75513549176011], 16);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -15,7 +15,7 @@ const text = {
     "cohoSouth": "<h2>CoHo South Café</h2><p>This is a good place to get breakfast right before class. I like their croissants and hot chocolate.</p>",
     "silo": "<h2>Silo Restaurants</h2><p>The Silo restaurants include Spokes Grill, Crepe Bistro, and Peet's Coffee. I love to get lunch here between classes.</p>",
     "foodTrucks": "<h2>Silo Food Trucks</h2><p>Shah's Halal and the Boba food truck are some of my favorites. There are a variety of other cuisines too.</p>",
-    "tercero": "<h2>Tercero</h2><p>This is where I lived in freshman year. I liked living here because it was always buzzling with activity. Fun fact: the word tercero means \"third\".</p>",
+    "tercero": "<h2>Tercero</h2><p>This is where I lived in freshman year. I liked living here because it was always bustling with activity. Fun fact: the word tercero means \"third\".</p>",
     "segundo": "<h2>Segundo</h2><p>I loved the Segundo DC as a freshman, and still go there today! Fun fact: the word segundo means \"second\".</p>",
     "cuarto": "<h2>Cuarto</h2><p>Cuarto is very beautiful in the spring, because of its falling white flowers that look like snow. Fun fact: the word cuarto means \"fourth\".</p>",
     "quad": "<h2>The Quad</h2><p>This is a great place to rest on the grass or lounge on the hammocks. I like coming here in the summer, because there are always available hammocks.</p>",
@@ -37,10 +37,26 @@ const dormsCheckbox = document.getElementById('dorms');
 
 
 // Icons
-var foodIcon = L.divIcon({className: 'marker-icon marker-food', html: '<div></div><i class="fas fa-utensils"></i>'});
-var napSpotsIcon = L.divIcon({className: 'marker-icon marker-nap', html: '<div></div><i class="fas fa-bed"></i>'});
-var studySpacesIcon = L.divIcon({className: 'marker-icon marker-study', html: '<div></div><i class="fas fa-book-open"></i>'});
-var dormIcon = L.divIcon({className: 'marker-icon marker-dorm', html: '<div></div><i class="fas fa-home"></i>'});
+var foodIcon = L.divIcon({
+    className: 'marker-icon marker-food', 
+    html: '<div></div><i class="icon mdi mdi-silverware-variant"></i>', 
+    iconAnchor: [15, 0]
+});
+var napSpotsIcon = L.divIcon({
+    className: 'marker-icon marker-nap', 
+    html: '<div></div><i class="icon mdi mdi-sleep"></i>',
+    iconAnchor: [15, 0]
+});
+var studySpacesIcon = L.divIcon({
+    className: 'marker-icon marker-study', 
+    html: '<div></div><i class="icon mdi mdi-book-open-variant"></i>',
+    iconAnchor: [15, 0]
+});
+var dormIcon = L.divIcon({
+    className: 'marker-icon marker-dorm', 
+    html: '<div></div><i class="icon mdi mdi-bed"></i>',
+    iconAnchor: [15, 0]
+});
 
 
 // Markers are divided into sets for each category
