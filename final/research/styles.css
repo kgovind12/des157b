@@ -1,0 +1,35 @@
+body {
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+hr {
+    width: 80%;
+    border: 15px solid rgb(32, 143, 91);
+    margin: 20px 0;
+}
+
+header, main {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5em;
+    padding: 15px 0;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.annotation {
+    padding: 0.8rem 0;
+}
+
+.cite {
+    padding-left: 50px;
+    text-indent: -50px;
+    overflow-wrap: break-word;
+}
