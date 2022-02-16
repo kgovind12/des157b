@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feasibility Report</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <hr>
@@ -12,7 +19,44 @@
         <h1>Coding Components and Feasibility Report</h1>
     </header>
     <main>
-        
+        <p class="bold">
+            Features of my project:
+        </p>
+        <ol>
+            <li>
+                <p>
+                    Form to add activities: The website will open with a form that users can fill out to log their sustainable activities. It will need multiple options (or chips) that the user can select. For this, a multiselect JavaScript or CSS library will be useful. Some examples of libraries I can use are Choices.js and pureScriptSelect. I aim to complete this feature within the first 2-3 days of starting the project.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Virtual plant: Users will be able to grow their own virtual plant whenever they add an activity. This growing animation should be visible, and can possibly be done through CSS. Since there are no in-built libraries for growing plants in JavaScript, creating a realistic growing plant might be a little challenging to accomplish. In case this doesn't seem feasible, I will have a meter that keeps rising as activities are added, and the goal will be when it reaches the top. Another alternative would be to draw a small plant and make it scale up using CSS as activities are added. This feature might take more time, and I plan to allow myself 4-5 days to achieve this.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Community garden: This feature is to allow users to see other users' plants. This interface should display all the plants that were grown on that day. This can be made possible by storing each plant's height in a database, and pulling all the entries from the database when the community garden page is loaded. These entries can then be used to populate the page with plants, since we now know their heights. Using CSS and JavaScript, we can display the plants on the page and scale them to their stored heights. This also might be a more time-consuming feature, so I will allow myself 4-5 days for this as well.
+                </p>
+                <p>
+                    The community garden should also have a scrolling interface. There are a few JavaScript libraries that allow for this, such as Sweet-scroll.js. This can also be done through Vanilla JS by giving each plant an index and incrementing the indices as the scroll arrows are clicked. 
+                </p>
+            </li>
+            <li>
+                <p>
+                    Popups: When each plant is hovered over, there should be a popup that displays with information about the activities that helped grow it. This popup can be styled in CSS, and the functionality of opening and closing a popup can be done in Vanilla JavaScript by changing its opacity on hover. There are also some libraries to achieve this functionality such as Bootstrap Popover or Popper.js. Given the time constraint for this project, it might be more feasible to go this route.
+                </p>
+            </li>
+        </ol>
+        <p class="bold">
+            Additional feature I will work on if I have time:
+        </p>
+        <ol>
+            <li>
+                <p>
+                    Achievements page: This will be a page with pure text for users to see their achievements. This might be a difficult task to accomplish, because I will need to calculate the collective achievements of users using some kind of formula. In terms of styling, it will require CSS to color the numbers or statistics in each line of text. For the scope of this project, this feature will remain a low priority since it might not fit within the time constraint. 
+                </p>
+            </li>
+        </ol>
     </main>
 </body>
 </html>

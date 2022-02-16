@@ -27,3 +27,7 @@ h2 {
 main {
     padding-bottom: 3rem;
 }
+
+.bold {
+    font-weight: bold;
+}
