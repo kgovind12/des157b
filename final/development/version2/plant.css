@@ -36,7 +36,7 @@ h1 {
     flex-direction: column;
 }
 
-a {
+.buttons a {
     font-family: 'Montserrat Alternates', sans-serif;
     color: var(--main-green);
     border: 2px solid var(--main-green);
@@ -49,7 +49,7 @@ a {
     transition: 0.25s ease;
 }
 
-a:hover {
+.buttons a:hover {
     background-color: var(--main-green);
     color: white;
 }
