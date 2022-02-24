@@ -3,6 +3,7 @@ font-family: 'Roboto', sans-serif; */
 
 :root {
     --main-green: rgb(9, 162, 78);
+    --dark-green: rgb(7, 126, 60);
 }
 
 body {
@@ -55,6 +56,11 @@ h1 {
 .chip {
     background-color: var(--main-green);
     color: white;
+    cursor: pointer;
+}
+
+.chip.selected {
+    background-color: var(--dark-green);
 }
 
 a {
