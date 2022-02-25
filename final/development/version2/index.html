@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat+Alternates:wght@400;500;600&family=Roboto:wght@500&display=swap" rel="stylesheet">
     
     <!-- Material Design -->
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -27,22 +27,36 @@
 </head>
 <body>
     <header>
-        <p>Project name here</p>
+        <p class="logo">the plant project</p>
     </header>
 
     <main>
-        <h1>What <span class="green">Green Activity</span> did you take part in today?</h1>
+        <div class="form">
+            <div class="page1">
+                <h1>What <span class="green">Green Activities</span> did you take part in today?</h1>
 
-        <div class="chips">
-            <div class="chip">Recycling</div>
-            <div class="chip">Composting</div>
-            <div class="chip">Donation</div>
-            <div class="chip">Using fuel-efficient transport</div>
-            <div class="chip">Using environmentally safe products</div>
-            <div class="chip">Other</div>
+                <div class="chips">
+                    <div class="chip">Recycling</div>
+                    <div class="chip">Composting</div>
+                    <div class="chip">Donation</div>
+                    <div class="chip">Using fuel-efficient transport</div>
+                    <div class="chip">Using environmentally safe products</div>
+                    <div class="chip">Other</div>
+                </div>
+
+                <a id="toPage2">Continue &rarr;</a>
+            </div>
+
+            <div class="page2">
+                <h2>Elaborate on what you did...</h2>
+
+                <textarea name="info" id="" rows="10"></textarea>
+
+                <a id="continue" href="">Continue to my plant &rarr;</a>
+            </div>
         </div>
 
-        <a id="continue" href="">Continue &rarr;</a>
+       
     </main>
 </body>
 </html>
