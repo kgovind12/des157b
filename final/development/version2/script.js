@@ -1,11 +1,18 @@
 (function() {
     'use strict';
 
+    Parse.serverURL = 'https://parseapi.back4app.com/'
+    Parse.initialize(
+        'cMQQ5iQeoQu0sB55PNk8u1Ipv79Ubvi8rsLq06lr', // This is your Application ID
+        'YQeJdbmuCxsZfU4dazDPENrdFhwLg4eUVFqj7tY5' // This is your Javascript key
+    );
+
     const chips = document.querySelectorAll('.chip');
     const continueBtn = document.querySelector('#continue');
     const toPage2Btn = document.querySelector('#toPage2');
     const formPage1 = document.querySelector('.page1');
     const formPage2 = document.querySelector('.page2');
+    const detailForm = document.querySelector('#detail');
 
     let numSelected = 0;
 
@@ -36,18 +43,40 @@
         });
     }
 
+    toPage2Btn.addEventListener('click', function(event) {
+        event.preventDefault();
+        formPage1.classList.add('slideout');
+        formPage2.classList.add('slidein');
+    });
+
     continueBtn.addEventListener('click', function(event) {
         if (numSelected === 0) {
             event.preventDefault();
             alert('Please select at least one activity.');
             return;
         }
+
+        addActivity();
     });
 
-    toPage2Btn.addEventListener('click', function(event) {
-        event.preventDefault();
-        formPage1.classList.add('slideout');
-        formPage2.classList.add('slidein');
-    });
+    async function addActivity() {
+        const chipsSelected = document.querySelectorAll('.selected');
+        const plantData = new Parse.Object('Activities');
+
+        console.log("Running here");
+
+        // Saving each activity to the database
+        // TODO: Fix this problem of data not getting saved to the database.
+        for (let chip of chipsSelected) {
+            plantData.set('activityType', chip.textContent);
+            plantData.set('detail', detailForm.value);
+        }
+
+        try {
+            const result = await plantData.save();
+        } catch (error) {
+            console.log('Could not add activities: ', error);
+        }
+    }
 
 })();
