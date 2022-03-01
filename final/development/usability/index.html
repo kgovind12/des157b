@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow your own virtual plant</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Montserrat+Alternates:wght@400;500;600&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!-- Material Design -->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Parse library -->
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <p class="logo">the plant project</p>
+    </header>
+
+    <main>
+        <a class="back-btn hidden" href="index.html"><i class="fas fa-arrow-left"></i></a>
+
+        <div class="form">
+            <div class="page1">
+                <h1>What <span class="green">Green Activities</span> did you take part in today?</h1>
+
+                <div class="chips">
+                    <div class="chip">Recycling</div>
+                    <div class="chip">Composting</div>
+                    <div class="chip">Donation</div>
+                    <div class="chip">Using fuel-efficient transport</div>
+                    <div class="chip">Using environmentally safe products</div>
+                    <div class="chip">Other</div>
+                </div>
+
+                <a class="continue" id="toPage2">Continue &rarr;</a>
+            </div>
+
+            <!-- TODO: This section should come sliding in -->
+            <div class="page2">
+                <h2>Elaborate on what you did...</h2>
+
+                <textarea name="info" id="detail" rows="10"></textarea>
+
+                <a class="continue" id="continue" href="">Continue to my plant &rarr;</a>
+            </div>
+        </div>
+
+        <div class="rectangle-bg"></div>
+       
+    </main>
+</body>
+</html>
