@@ -12,7 +12,7 @@
     "4. Is the chip selection comprehensive enough? Are there any other options you feel could be included?\n" +
     "5. Are you able to convey all the information you want through the interface?"
 
-    // alert(usabilityTest);
+    alert(usabilityTest);
 
     Parse.serverURL = 'https://parseapi.back4app.com/'
     Parse.initialize(
