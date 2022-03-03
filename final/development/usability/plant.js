@@ -2,7 +2,7 @@
     'use strict';
 
     const params = new URLSearchParams(document.location.search);
-    const numFrames = params.get('selected');
+    const numFrames = parseInt(params.get('selected')) + parseInt(localStorage.getItem('plantHeight'));
     const root = document.querySelector(':root');
     const communityGardenBtn = document.getElementById('communitygarden');
 
@@ -11,7 +11,6 @@
     root.style.setProperty('--plant-height', numFrames);
     // TODO: Pull the plant's height from the database instead of the URL
     // Find the number of entries in the database for any particular user
-
 
     // TODO: Get this code working, hook it up to another page called community garden
     // Pull all the database entries and display them there. 
