@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usability Test Results</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <hr>
+    <header>
+        <h1>Usability Test Results</h1>
+    </header>
+
+    <main>
+        <p>
+            I tested my project on three different users.
+            The specification of this test was to log activities and grow a virtual plant through the interface provided.
+            To assess the user experience and potential concerns, I posed the following questions to each of my users:
+            <ol>
+                <li>
+                    <p>
+                        Do you understand what you need to do to grow your plant? Does the interface communicate this purpose effectively?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        What emotions do you feel when you watch the plant grow (satisfaction, joy, frustration, etc.)? Is the overall experience positive or negative?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Is it clear what each button does?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Is the chip selection comprehensive enough? Are there any other options you feel could be included?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Are you able to convey all the information you want through the interface?
+                    </p>
+                </li>
+            </ol>
+        </p>
+
+        <div class="images">
+            <img src="images/img1.jpg" alt="User test pic 1">
+            <img src="images/img2.jpg" alt="User test pic 2">
+            <img src="images/img3.jpg" alt="User test pic 3">
+        </div>
+
+        <h2>Observations:</h2>
+        <p>
+            I made four main observations from these tests:
+            <ol>
+                <li>
+                    <p>
+                        My users were confused on what makes the plant grow.
+                        They weren't sure how the height of the plant was related to the information they provided, or whether the textbox input had anything to do with growing the plant.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        It wasn't immediately clear that multiple activities could be selected on the form. 
+                        All of my users selected one activity each time, then later mentioned that they weren't sure they could select more than one.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Two of my users also tried to press Enter to submit the textbox in the second section. 
+                        This called attention to the fact that the interaction with my textbox wasn't accessible enough.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        One of my users was confused as to why the Continue button turned green along with the other activity options.
+                        It took her some time to figure out that the button became enabled only after selecting at least one option.
+                    </p>
+                </li>
+            </ol>
+        </p>
+
+        <h2>Future Plans:</h2>
+        <p>
+            Based on these observations, I intend to make the following changes to my project:
+            <ol>
+                <li>
+                    <p>
+                        Add an info button in the corner of the screen that opens up an information overlay.
+                        This overlay will give instructions on how to use the website and include details on what makes the plant grow.
+                        I also aim to incorporate a progress bar into the plant page in the final design.
+                        This can show users how much progress has been made toward the plant's full height.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Change the chip selection layout slightly on the home page, such that each chip has checkmark icon next to it.
+                        These will be unchecked until the user has clicked on the chip, after which it will turn to checked.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        To improve accessibility, I aim to make the textbox submit when the user presses Enter.
+                        This will then take the user to the plant page directly.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The Continue button on the first page will be slightly more faded, to indicate that it is disabled. 
+                        When at least one activity is selected, I aim to make the button less faded, but still the same white background color with a green border.
+                        This is so that it does not look too much like a multiselect option/activity, but still shows that it is possible to interact with.
+                        On hover, this button can turn green as before.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </main>
+</body>
+</html>

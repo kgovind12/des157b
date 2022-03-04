@@ -1,0 +1,41 @@
+body {
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+hr {
+    width: 80%;
+    border: 15px solid rgb(32, 143, 91);
+    margin: 20px 0;
+}
+
+header, main {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5em;
+    padding: 15px 0;
+}
+
+h2 {
+    font-size: 1.3em;
+    padding-top: 2.5rem;
+}
+
+main {
+    padding-bottom: 3rem;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+img {
+    width: 30%;
+    margin: 5px;
+}
