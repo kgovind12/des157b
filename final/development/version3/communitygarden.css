@@ -1,0 +1,132 @@
+/* font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+    --background: #edf9d3;
+    --main-green: #09a24e;
+    --dark-green: #077e3c;
+    --main-black: rgb(67, 67, 67);
+    --no-red: #d02a2a;
+    --spritesheet-width: 5464px;
+    --num-frames: 8;
+    --plant1-height: 7;
+    --plant2-height: 2;
+    --plant3-height: 1;
+    --plant1-type: url('images/spritesheet.png');
+    --plant2-type: url('images/spritesheet.png');
+    --plant3-type: url('images/spritesheet.png');
+}
+
+/*************** Basic styles **************/
+.hidden {
+    display: none;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/**************** Elements ****************/
+body {
+    height: 100vh;
+    background-color: var(--background);
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+    color: var(--main-black);
+}
+
+.back-btn, .info-btn, .share-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 2em;
+    color: var(--main-black);
+    cursor: pointer;
+}
+
+.info-btn {
+    top: 85px;
+}
+
+.share-btn {
+    top: 140px;
+}
+
+.plants {
+    display: flex;
+}
+
+.plant {
+    width: 670px;
+    height: 650px;
+    transform: translate(-25%);
+    /* position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    background: var(--plant-type) no-repeat;
+    animation: move 1s steps(var(--plant-height)) forwards; */
+}
+
+#plant1 {
+    background: var(--plant1-type) no-repeat;
+    animation: move1 1s steps(var(--plant1-height)) forwards;
+}
+
+#plant2 {
+    background: var(--plant2-type) no-repeat;
+    animation: move2 1s steps(var(--plant2-height)) forwards;
+}
+
+#plant3 {
+    background: var(--plant3-type) no-repeat;
+    animation: move3 1s steps(var(--plant3-height)) forwards;
+}
+
+/********************* Animations ********************/
+@keyframes move1 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: calc(-1 * (var(--plant1-height)/var(--num-frames) * var(--spritesheet-width)));
+    }
+}
+
+@keyframes move2 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: calc(-1 * (var(--plant2-height)/var(--num-frames) * var(--spritesheet-width)));
+    }
+}
+
+@keyframes move3 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: calc(-1 * (var(--plant3-height)/var(--num-frames) * var(--spritesheet-width)));
+    }
+}
+
+/* Body scale in animation */
+.scalein {
+    animation: scalein 1s ease;
+}
+
+@keyframes scalein {
+    0% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
