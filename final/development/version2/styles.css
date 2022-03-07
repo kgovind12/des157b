@@ -48,6 +48,7 @@ h1 {
     align-items: center;
     justify-content: center;
     margin: 25px 0;
+    margin-bottom: 70px;
 }
 
 .chip, a {
@@ -73,7 +74,7 @@ a {
     border: 2px solid var(--main-green);
     color: var(--main-green);
     text-decoration: none;
-    max-width: 150px;
+    max-width: 250px;
     margin: 30px auto;
     transition: 0.25s ease;
     cursor: pointer;

@@ -1,0 +1,223 @@
+/* font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+    --main-green: #09a24e;
+    --dark-green: #077e3c;
+    --background-green: #7ed07e;
+    --text-gray: rgb(52, 52, 52);
+}
+
+html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0 3rem;
+}
+
+header {
+    text-align: center;
+}
+
+.logo {
+    font-family: 'Poiret One', cursive;
+    font-size: 1.8em;
+    color: var(--main-green);
+}
+
+.back-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 2em;
+    color: var(--main-black);
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 50px 0;
+}
+
+.green {
+    color: var(--main-green);
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+
+.chip, .continue {
+    border-radius: 30px;
+    padding: 15px 22px;
+    margin: 12px;
+    font-size: 1.2em;
+}
+
+.chip {
+    border: 2px solid var(--main-green);
+    color: var(--main-green);
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.chip.selected {
+    background-color: var(--main-green);
+    color: white;
+}
+
+a.continue {
+    border: 2px solid var(--main-green);
+    color: var(--main-green);
+    text-decoration: none;
+    max-width: 250px;
+    margin: 30px auto;
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+a#toPage2.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+a#toPage2:hover, a#toPage3:hover {
+    background-color: var(--main-green);
+    color: white;
+    opacity: 1;
+    cursor: pointer;
+}
+
+a#continue {
+    background-color: var(--main-green);
+    color: white;
+}
+
+/* Sliding form */
+textarea {
+    width: 100%;
+    margin: auto;
+    border: 1px solid var(--text-gray);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid var(--main-green);
+}
+
+.page1 {
+    z-index: 1;
+}
+
+.page2, .page3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    z-index: -1;
+}
+
+.page2 h2 {
+    text-align: left;
+    font-size: 2em;
+    color: var(--text-gray);
+}
+
+
+/**************************** Page 3 ****************************/
+.chooseplant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plant-img {
+    width: 35%;
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid var(--main-green);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.plant-img.green, .plant-img:hover {
+    background-color: var(--background-green);
+}
+
+/************************** Animations ****************************/
+
+.slideout {
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s ease;
+    transition-delay: 0.5s;
+}
+
+.slidein {
+    opacity: 1;
+    z-index: 1;
+    transition: 1s ease;
+    transition-delay: 1s;
+}
+
+
+/* Rectangle background */
+.rectangle-bg {
+    width: 0;
+    height: 100vh;
+    background-color: var(--background-green);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.rectangle-bg.slide {
+    animation: slide 1.5s forwards ease;
+}
+
+@keyframes slide {
+    0% {
+        width: 0;
+        left: 0;
+    }
+    50% {
+        width: 100vw;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
