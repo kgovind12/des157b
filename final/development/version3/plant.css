@@ -5,6 +5,7 @@ font-family: 'Roboto', sans-serif; */
     --background: #edf9d3;
     --main-green: #09a24e;
     --dark-green: #077e3c;
+    --very-light-green: #dff4e8;
     --main-black: rgb(67, 67, 67);
     --no-red: #d02a2a;
     --spritesheet-width: 5464px;
@@ -157,12 +158,25 @@ textarea {
     border: 2px solid var(--main-green);
     color: var(--main-green);
     cursor: pointer;
-    transition: 0.25s ease;
+    transition: 0.3s ease;
 }
 
-.chip.selected, .chip:hover {
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--main-green);
+    margin-right: 10px;
+    transition: 0.3s ease;
+}
+
+.chip.selected .circle {
     background-color: var(--main-green);
-    color: white;
+}
+
+.chip:hover {
+    background-color: var(--very-light-green);
+    transition: 0.5s ease;
 }
 
 #submit {

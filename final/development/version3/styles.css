@@ -5,6 +5,7 @@ font-family: 'Roboto', sans-serif; */
     --main-green: #09a24e;
     --dark-green: #077e3c;
     --background-green: #7ed07e;
+    --very-light-green: #dff4e8;
     --text-gray: rgb(52, 52, 52);
 }
 
@@ -77,11 +78,27 @@ h1 {
     color: var(--main-green);
     cursor: pointer;
     transition: 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.chip.selected {
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--main-green);
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.chip.selected .circle {
     background-color: var(--main-green);
-    color: white;
+}
+
+.chip:hover {
+    background-color: var(--very-light-green);
+    transition: 0.5s ease;
 }
 
 a.continue {
