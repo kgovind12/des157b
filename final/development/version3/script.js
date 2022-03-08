@@ -60,9 +60,17 @@
 
         // Plant height is the number of activities selected
         let plantHeight = document.querySelectorAll('.selected').length;
+        let prevPlantHeight = localStorage.getItem('plantHeight');
+
+        console.log("Plant height = ", plantHeight);
+        console.log("Previous plant height = ", prevPlantHeight);
 
         // Save this plantHeight to local storage
-        localStorage.setItem('plantHeight', plantHeight + parseInt(localStorage.getItem('plantHeight')));
+        if (prevPlantHeight) {
+            localStorage.setItem('plantHeight', plantHeight + parseInt(prevPlantHeight));
+        } else {
+            localStorage.setItem('plantHeight', plantHeight);
+        }
 
         // The following line is used for resetting the plant height for testing purposes
         // localStorage.setItem('plantHeight', 0);

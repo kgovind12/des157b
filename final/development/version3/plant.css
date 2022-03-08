@@ -10,7 +10,7 @@ font-family: 'Roboto', sans-serif; */
     --no-red: #d02a2a;
     --spritesheet-width: 5464px;
     --num-frames: 8;
-    --plant-height: 7;
+    --plant-height: 1;
     --plant-type: url('images/spritesheet.png');
 }
 
