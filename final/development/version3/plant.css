@@ -158,31 +158,12 @@ textarea {
     border: 2px solid var(--main-green);
     color: var(--main-green);
     cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.chip {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 2px solid var(--main-green);
-    margin-right: 10px;
-    transition: 0.3s ease;
-}
-
-.chip.selected .circle {
-    background-color: var(--main-green);
-}
-
-.chip:hover {
-    background-color: var(--very-light-green);
     transition: 0.5s ease;
+}
+
+.chip.selected, .chip:hover {
+    background-color: var(--main-green);
+    color: white;
 }
 
 #submit {

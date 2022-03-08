@@ -77,33 +77,17 @@ h1 {
     border: 2px solid var(--main-green);
     color: var(--main-green);
     cursor: pointer;
-    transition: 0.25s ease;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 2px solid var(--main-green);
-    margin-right: 10px;
-    transition: all 0.3s ease;
-}
-
-.chip.selected .circle {
-    background-color: var(--main-green);
-}
-
-.chip:hover {
-    background-color: var(--very-light-green);
     transition: 0.5s ease;
 }
 
+.chip.selected, .chip:hover {
+    background-color: var(--main-green);
+    color: white;
+}
+
 a.continue {
-    border: 2px solid var(--main-green);
-    color: var(--main-green);
+    background-color: var(--main-green);
+    color: white;
     text-decoration: none;
     max-width: 250px;
     margin: 30px auto;
@@ -113,23 +97,12 @@ a.continue {
 
 a:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 a#toPage2.disabled {
     pointer-events: none;
     opacity: 0.5;
-}
-
-a#toPage2:hover, a#toPage3:hover {
-    background-color: var(--main-green);
-    color: white;
-    opacity: 1;
-    cursor: pointer;
-}
-
-a#continue {
-    background-color: var(--main-green);
-    color: white;
 }
 
 /* Sliding form */
@@ -187,8 +160,12 @@ textarea:focus {
     transition: 0.3s ease;
 }
 
-.plant-img.green, .plant-img:hover {
+.plant-img.green {
     background-color: var(--background-green);
+}
+
+.plant-img:hover {
+    transform: scale(1.07);
 }
 
 /************************** Animations ****************************/

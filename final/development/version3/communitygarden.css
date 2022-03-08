@@ -12,9 +12,9 @@ font-family: 'Roboto', sans-serif; */
     --plant1-height: 7;
     --plant2-height: 2;
     --plant3-height: 1;
-    --plant1-type: url('images/spritesheet.png');
-    --plant2-type: url('images/spritesheet.png');
-    --plant3-type: url('images/spritesheet.png');
+    --plant1-type: url('');
+    --plant2-type: url('');
+    --plant3-type: url('');
 }
 
 /*************** Basic styles **************/
@@ -32,6 +32,7 @@ body {
     height: 100vh;
     background-color: var(--background);
     font-family: 'Montserrat Alternates', sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -48,6 +49,7 @@ h1 {
     font-size: 2em;
     color: var(--main-black);
     cursor: pointer;
+    z-index: 1;
 }
 
 .info-btn {
@@ -60,18 +62,16 @@ h1 {
 
 .plants {
     display: flex;
+    justify-content: center;
+    transform: translate(40px);
 }
 
 .plant {
     width: 670px;
     height: 650px;
     transform: translate(-25%);
-    /* position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
-    background: var(--plant-type) no-repeat;
-    animation: move 1s steps(var(--plant-height)) forwards; */
+    margin-right: 2rem;
+    margin-left: -3rem;
 }
 
 #plant1 {
