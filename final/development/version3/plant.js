@@ -139,7 +139,7 @@
     // Handle submit of add activity form
     submitBtn.addEventListener('click', function() {
         // Hide the overlay
-        overlay.classList.add('hidden');
+        addActivityOverlay.classList.add('hidden');
         overlayBg.classList.add('hidden');
 
         console.log("You selected ", numSelected);

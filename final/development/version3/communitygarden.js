@@ -20,11 +20,12 @@
     // Repeat the same for plant-types.
 
     // Now this only works because there are only 3 plants in the database
-    // If we add more plants, this will fail
-    // Learn how to limit data
+
     async function displayPlants() {
         const plants = Parse.Object.extend('Plants');
         const query = new Parse.Query(plants);
+
+        query.limit(3);
 
         try {
             const results = await query.find(); // limit to 3?
