@@ -8,6 +8,12 @@
     );
 
     const root = document.querySelector(':root');
+    const infoBtn = document.querySelector('.info-btn');
+    
+    // Overlay form to show information
+    const infoOverlay = document.querySelector('#info-overlay');
+    const infoCloseBtn = document.querySelector('#info-close');
+    const overlayBg = document.querySelector('.overlay-bg');
 
     // TODO: Get the first three plants from db
     // set root of plant1-height, plant2-height, and plant3-height;
@@ -44,4 +50,16 @@
     }
 
     displayPlants();
+
+    // Open info overlay
+    infoBtn.addEventListener('click', function() {
+        infoOverlay.classList.remove('hidden');
+        overlayBg.classList.remove('hidden');
+    });
+
+    // Close info overlay
+    infoCloseBtn.addEventListener('click', function() {
+        infoOverlay.classList.add('hidden');
+        overlayBg.classList.add('hidden');
+    });
 })();
