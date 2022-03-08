@@ -63,15 +63,13 @@ h1 {
 .plants {
     display: flex;
     justify-content: center;
-    transform: translate(40px);
 }
 
 .plant {
     width: 670px;
     height: 650px;
+    padding-right: 30rem;
     transform: translate(-25%);
-    margin-right: 2rem;
-    margin-left: -3rem;
 }
 
 #plant1 {

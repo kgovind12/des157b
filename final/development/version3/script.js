@@ -125,8 +125,14 @@
 
             if (this.classList.contains('green')) {
                 this.classList.remove('green');
+
+                // disable continue button
+                continueBtn.classList.add('disabled');
             } else {
                 this.classList.add('green');
+
+                // enable continue button
+                continueBtn.classList.remove('disabled');
             }
         });
     });

@@ -100,7 +100,7 @@ a:hover {
     cursor: pointer;
 }
 
-a#toPage2.disabled {
+a.disabled {
     pointer-events: none;
     opacity: 0.5;
 }
@@ -113,6 +113,7 @@ textarea {
     border-radius: 10px;
     margin-bottom: 30px;
     box-sizing: border-box;
+    padding: 1rem;
 }
 
 textarea:focus {
@@ -133,6 +134,7 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     opacity: 0;
+    display: none;
     z-index: -1;
 }
 
@@ -172,12 +174,14 @@ textarea:focus {
 
 .slideout {
     opacity: 0;
+    display: none;
     z-index: -1;
     transition: 0.5s ease;
     transition-delay: 0.5s;
 }
 
 .slidein {
+    display: flex;
     opacity: 1;
     z-index: 1;
     transition: 1s ease;

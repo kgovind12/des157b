@@ -45,6 +45,7 @@ h1 {
     font-size: 2em;
     color: var(--main-black);
     cursor: pointer;
+    z-index: 1;
 }
 
 .info-btn {
@@ -142,6 +143,7 @@ h1 {
 textarea {
     width: 100%;
     margin-bottom: 40px;
+    padding: 1rem;
 }
 
 .chips {
