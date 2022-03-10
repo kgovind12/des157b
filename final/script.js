@@ -155,8 +155,8 @@
         });
     });
 
+    // Reset the local storage every day
     function resetLocalStorage() {
-        // Reset the local storage every day
         let todaysDate = new Date().getDate();
         if (todaysDate !== parseInt(localStorage.getItem('date'))) {
             localStorage.clear();
