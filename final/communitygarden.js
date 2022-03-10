@@ -28,7 +28,7 @@
         query.limit(3);
 
         try {
-            const results = await query.find();
+            const results = await query.descending('updatedAt').find();
             console.log(results);
 
             // Display each plant by changing css root variables

@@ -81,6 +81,20 @@
         });
     });
 
+    // Handle pressing enter on input form - for accessibility
+    detailForm.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            formPage2.classList.add('slideout');
+            formPage2.classList.remove('slidein');
+            formPage3.classList.add('slidein');
+            rectangleBg.classList.add('slide');
+    
+            rectangleBg.addEventListener('animationend', function() {
+                this.classList.remove('slide');
+            });
+        }
+    });
+
     // Handle button click for continuing to page 3
     toPage3Btn.addEventListener('click', function(event) {
         event.preventDefault();

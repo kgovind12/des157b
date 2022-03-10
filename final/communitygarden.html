@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Garden</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!-- Normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="communitygarden.css">
+
+    <!-- Parse library -->
+    <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+
+    <!-- Script -->
+    <script src="communitygarden.js" defer></script>
+</head>
+<body>
+    <h1 class="scalein">Community Garden</h1>
+
+    <a class="back-btn scalein" href="plant.html"><i class="fas fa-arrow-left"></i></a>
+    <a class="info-btn scalein"><i class="fas fa-info-circle"></i></a>
+
+    <div class="plants">
+        <div class="plant" id="plant1"></div>
+        <div class="plant" id="plant2"></div>
+        <div class="plant" id="plant3"></div>
+    </div>
+
+    <div id="info-overlay" class="overlay hidden">
+        <div id="info-close" class="close">&times;</div>
+        <h2>Welcome to the Plant Project!</h2>
+        <p>
+            Here you can keep track of how much you impact the environment daily.
+        </p>
+        <p>
+            The more you do to help the environment, the taller your plant will grow!
+        </p>
+        <p>
+            You can add activities to grow your plant, and click the Community Garden page to see what activities other people have done.
+        </p>
+    </div>
+
+    <div class="overlay-bg hidden"></div>
+</body>
+</html>
