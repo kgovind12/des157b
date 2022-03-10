@@ -33,6 +33,10 @@
     const noBtn = document.querySelector('#no');
     const yesBtn = document.querySelector('#yes');
 
+    // Progress bar
+    const progressBar = document.querySelector('.progressbar');
+    const progressLabel = document.getElementById('progress-label');
+
 
     let spritesheetSrc = '';
     if (plantSrc === 'images/plant1.png') {
@@ -51,6 +55,10 @@
         numFrames = 7;
         console.log("You completed all the activities for today!");
     }
+
+    let heightPercentage = (numFrames / 7) * 100;
+    progressLabel.textContent = heightPercentage.toString() + '%';
+    progressBar.style.height = `calc(${progressLabel.textContent} - 6px)`;
 
     root.style.setProperty('--plant-height', numFrames);
     root.style.setProperty('--plant-type', `url("${spritesheetSrc}")`);
@@ -152,6 +160,10 @@
             plantHeight = 7;
             console.log("All activiites completed!");
         }
+
+        let heightPercentage = (plantHeight / 7) * 100;
+        progressLabel.textContent = heightPercentage.toString() + '%';
+        progressBar.style.height = `calc(${progressLabel.textContent} - 6px)`;
 
         root.style.setProperty('--plant-height', plantHeight);
 

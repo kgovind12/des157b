@@ -238,3 +238,37 @@ textarea:focus {
     background-color: var(--no-red);
     color: white;
 }
+
+/********************* Progress Bar ********************/
+
+.progressbarcontainer {
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+}
+
+.progressbaroutline {
+    position: relative;
+    height: 360px;
+    border: 2px solid var(--main-black);
+    border-radius: 10px;
+    width: 40px;
+    padding: 3px;
+}
+
+.progressbar {
+    height: 0;
+    position: absolute;
+    bottom: 3px;
+    width: calc(100% - 6px);
+    box-sizing: border-box;
+    background-color: var(--main-green);
+    border-radius: 7px;
+    transition: height 2s ease;
+}
+
+#progress-label {
+    font-size: 1.4em;
+    color: var(--main-green);
+    font-weight: bold;
+}
