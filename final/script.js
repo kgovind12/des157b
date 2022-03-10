@@ -28,6 +28,14 @@
 
     let numSelected = 0;
 
+    // Reset the local storage every day
+    let hour = new Date().getHours();
+    let minute = new Date().getMinutes();
+
+    if (hour === 0 && minute === 0) {
+        localStorage.clear();
+    }
+
     // Handle click of each chip
     for (let chip of chips) {
         chip.addEventListener('click', function() {

@@ -57,7 +57,7 @@
     }
 
     let heightPercentage = (numFrames / 7) * 100;
-    progressLabel.textContent = heightPercentage.toString() + '%';
+    progressLabel.textContent = parseInt(heightPercentage) + '%';
     progressBar.style.height = `calc(${progressLabel.textContent} - 6px)`;
 
     root.style.setProperty('--plant-height', numFrames);
@@ -113,15 +113,6 @@
         overlayBg.classList.add('hidden');
     });
 
-    // Find the number of entries in the database for any particular user
-
-    // TODO: Get this code working, hook it up to another page called community garden
-    // Pull all the database entries and display them there. 
-    // First start with list or grid format, then expand from there if time permits.
-    communityGardenBtn.addEventListener('click', function() {
-        console.log('Community Garden button clicked');
-    });
-
     // TODO: Add another spritesheet. Allow users to choose between multiple plants.
 
     // Handling chip selection
@@ -162,7 +153,7 @@
         }
 
         let heightPercentage = (plantHeight / 7) * 100;
-        progressLabel.textContent = heightPercentage.toString() + '%';
+        progressLabel.textContent = parseInt(heightPercentage) + '%';
         progressBar.style.height = `calc(${progressLabel.textContent} - 6px)`;
 
         root.style.setProperty('--plant-height', plantHeight);
