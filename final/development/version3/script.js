@@ -54,9 +54,9 @@
 
         // Show the back button. Handle slide in of second form
         backBtn.classList.remove('hidden');
+        rectangleBg.classList.add('slide');
         formPage1.classList.add('slideout');
         formPage2.classList.add('slidein');
-        rectangleBg.classList.add('slide');
 
         // Plant height is the number of activities selected
         let plantHeight = document.querySelectorAll('.selected').length;
@@ -82,7 +82,6 @@
     });
 
     detailForm.addEventListener('keypress', function(event) {
-        event.preventDefault();
         
         if (event.key === 'Enter') {
             formPage2.classList.add('slideout');

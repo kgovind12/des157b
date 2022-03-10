@@ -160,6 +160,9 @@
             chip.classList.remove('selected');
         }
         numSelected = 0;
+
+        // Reset form input
+        detailForm.value = '';
     });
 
     async function savePlantToDB() {
