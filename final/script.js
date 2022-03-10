@@ -28,13 +28,7 @@
 
     let numSelected = 0;
 
-    // Reset the local storage every day
-    let hour = new Date().getHours();
-    let minute = new Date().getMinutes();
-
-    if (hour === 0 && minute === 0) {
-        localStorage.clear();
-    }
+    resetLocalStorage(); // resets the plant height every day
 
     // Handle click of each chip
     for (let chip of chips) {
@@ -79,6 +73,8 @@
         } else {
             localStorage.setItem('plantHeight', plantHeight);
         }
+
+        localStorage.setItem('date', new Date().getDate());
 
         // The following line is used for resetting the plant height for testing purposes
         // localStorage.setItem('plantHeight', 0);
@@ -158,4 +154,12 @@
             }
         });
     });
+
+    function resetLocalStorage() {
+        // Reset the local storage every day
+        let todaysDate = new Date().getDate();
+        if (todaysDate !== parseInt(localStorage.getItem('date'))) {
+            localStorage.clear();
+        }
+    }
 })();
