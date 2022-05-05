@@ -1,62 +1,50 @@
 {
     "point1": {
         "month": "January",
-        "feeling": "Bittersweet",
-        "reason": "We just got through a year of COVID. I am excited to start DES 157, but wish it was in-person."
+        "feeling": "Bittersweet"
     },
     "point2": {
         "month": "February",
-        "feeling": "Peaceful",
-        "reason": "I went hiking in Auburn. It feels good to lose myself in the silence and the trees."
+        "feeling": "Peaceful"
     },
     "point3": {
         "month": "March",
-        "feeling": "Worried",
-        "reason": "The second wave of COVID has just started, and many new variants have emerged. Cases are rising rapidly."
+        "feeling": "Worried"
     },
     "point4": {
         "month": "April",
-        "feeling": "Sad",
-        "reason": "I just lost a close family member. Rest in peace... :("
+        "feeling": "Sad"
     },
     "point5": {
         "month": "May",
-        "feeling": "Alright",
-        "reason": "I'm healing. I occupy myself with work every day to stay sane. I am grateful for the opportunities I have to get better."
+        "feeling": "Alright"
     },
     "point6": {
         "month": "June",
-        "feeling": "Hopeful",
-        "reason": "I just got vaccinated. I know we'll all be out of this pandemic and back to our lives soon."
+        "feeling": "Hopeful"
     },
     "point7": {
         "month": "July",
-        "feeling": "Stressed",
-        "reason": "I'm taking a summer session class and finals are near. One more all-nighter to go..."
+        "feeling": "Stressed"
     },
     "point8": {
         "month": "August",
-        "feeling": "Exhilarated",
-        "reason": "I took a trip to Yosemite. With no phone service, I was able to connect with nature. I even fell into a waterfall, and this was one of the best experiences of my life! :P"
+        "feeling": "Exhilarated"
     },
     "point9": {
         "month": "September",
-        "feeling": "Excited",
-        "reason": "We're going back to in-person classes! And I will be tutoring DES 157A. :)"
+        "feeling": "Excited"
     },
     "point10": {
         "month": "October",
-        "feeling": "Happy",
-        "reason": "I'm super busy with classes, and that's just the way I like it! I'm really enjoying this quarter back on campus. :D"
+        "feeling": "Happy"
     },
     "point11": {
         "month": "November",
-        "feeling": "Thankful",
-        "reason": "Thanksgiving is here! I am thankful for family, friends, and the chance to experience my first ever Thanksgiving dinner!"
+        "feeling": "Thankful"
     },
     "point12": {
         "month": "December",
-        "feeling": "Optimistic",
-        "reason": "We are on the road to recovery. I am celebrating Christmas and New Year with my family. Also...I got my first job offer!"
+        "feeling": "Optimistic"
     }
 }
