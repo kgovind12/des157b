@@ -12,22 +12,22 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 // Constants
 const text = {
     "coho": "<h2>Memorial Union CoHo</h2><p>There are so many different restaurants here. The café has the best pastries. Also, this is the only place on campus that has vegetarian sushi.</p>",
-    "cohoSouth": "<h2>CoHo South Café</h2><p>This is a good place to get breakfast right before class. I like their croissants and hot chocolate.</p>",
-    "silo": "<h2>Silo Restaurants</h2><p>The Silo restaurants include Spokes Grill, Crepe Bistro, and Peet's Coffee. I love to get lunch here between classes.</p>",
-    "foodTrucks": "<h2>Silo Food Trucks</h2><p>Shah's Halal and the Boba food truck are some of my favorites. There are a variety of other cuisines too.</p>",
-    "tercero": "<h2>Tercero</h2><p>This is where I lived in freshman year. I liked living here because it was always bustling with activity. Fun fact: the word tercero means \"third\".</p>",
-    "segundo": "<h2>Segundo</h2><p>I loved the Segundo DC as a freshman, and still go there today! Fun fact: the word segundo means \"second\".</p>",
+    "cohoSouth": "<h2>CoHo South Café</h2><p>This is a good place to get breakfast right before class.</p>",
+    "silo": "<h2>Silo Restaurants</h2><p>The Silo restaurants include Spokes Grill, Crepe Bistro, and Peet's Coffee.</p>",
+    "foodTrucks": "<h2>Silo Food Trucks</h2><p>There are food trucks for a variety of cuisines here.</p>",
+    "tercero": "<h2>Tercero</h2><p>Tercero is always bustling with activity. Fun fact: the word tercero means \"third\".</p>",
+    "segundo": "<h2>Segundo</h2><p>Segundo is more peaceful, and its DC food is the best. Fun fact: the word segundo means \"second\".</p>",
     "cuarto": "<h2>Cuarto</h2><p>Cuarto is very beautiful in the spring, because of its falling white flowers that look like snow. Fun fact: the word cuarto means \"fourth\".</p>",
-    "quad": "<h2>The Quad</h2><p>This is a great place to rest on the grass or lounge on the hammocks. I like coming here in the summer, because there are always available hammocks.</p>",
+    "quad": "<h2>The Quad</h2><p>This is a great place to rest on the grass or lounge on the hammocks. If you come here in the summer, it's easier to catch a hammock!</p>",
     "srrc": "<h2>Student Recruitment and Retention Center</h2><p>The sofas here are super comfy! You can catch a quick nap here in between classes.</p>",
-    "wrrc": "<h2>Women's Resources and Research Center</h2><p>This is my favorite nap spot because it has blankets and pillows you can use. :)</p>",
-    "mediatationRoom": "<h2>Meditation Room</h2><p>This is a peaceful place to come to when the college life gets too busy. I sometimes come here to get away from the pressure of my classes.</p>",
-    "arboretum": "<h2>Arboretum</h2><p>The arboretum is one of UC Davis's most serene and beautiful spots. I like watching the ducks at Spafford Lake. Sometimes, if I'm lucky, I can spot a turtle or two.</p>",
-    "library": "<h2>Shields Library</h2><p>Whether for independent or group study, this is my go-to place to get into the focus zone. My favorite part of the library is the Main Reading Room.</p>",
-    "california": "<h2>California Hall</h2><p>This is my favorite lecture hall ever. It is so spacious, and the lounge tables are a great place to study while watching the bike traffic outside.</p>",
-    "scc": "<h2>Student Community Center</h2><p>Right at the center of campus, the SCC is a popular place to study. I like that they have a café and even a microwave.</p>",
-    "mu": "<h2>Memorial Union</h2><p>The lounges here are really nice, but crowded. I like how the market and game room are close by, in case I want to take a break.</p>",
-    "kemper": "<h2>Kemper Hall</h2><p>This is the engineering building, but it is open to all majors! I used to come here a lot in freshman year, because it was really close to my dorm.</p>"
+    "wrrc": "<h2>Women's Resources and Research Center</h2><p>This nap spot has blankets and pillows you can use. :)</p>",
+    "mediatationRoom": "<h2>Meditation Room</h2><p>This is a peaceful place to come to when the college life gets too busy, or you want to escape the pressures of classes.</p>",
+    "arboretum": "<h2>Arboretum</h2><p>The arboretum is one of UC Davis's most serene and beautiful spots. You can watch the ducks here, or spot a turtle or two if you're lucky!</p>",
+    "library": "<h2>Shields Library</h2><p>Whether for independent or group study, this is a good place to get into the focus zone. The Main Reading Room is very beautiful too.</p>",
+    "california": "<h2>California Hall</h2><p>This hall is one of the newer ones on campus. It is so spacious, and the lounge tables are a great place to study while watching the bike traffic outside.</p>",
+    "scc": "<h2>Student Community Center</h2><p>Right at the center of campus, the SCC is a popular place to study. They even have a café and a microwave.</p>",
+    "mu": "<h2>Memorial Union</h2><p>The lounges here are really nice, but crowded. If you want to take a break, the market and game room are close by.</p>",
+    "kemper": "<h2>Kemper Hall</h2><p>This is the engineering building, but it is open to all majors! You can come here to put your engineering skills to the test (or code all night in the basement :P)</p>"
 }
 
 const foodCheckbox = document.getElementById('best-food');
